@@ -1,0 +1,46 @@
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  p {
+    font-size: 5em;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    text-shadow: 10px 5px 0px rgb(23, 70, 77);
+  }
+
+  :hover {
+    cursor: pointer;
+    animation: treme 0.1s infinite;
+  }
+
+  @keyframes treme {
+    0% {
+      text-shadow: 10px 5px 0px rgb(23, 70, 77);
+      transform: translate(10px, 5px);
+    }
+
+    25% {
+      text-shadow: 0px 5px 0px rgb(23, 70, 77);
+      transform: translate(5px, 5px);
+    }
+
+    50% {
+      text-shadow: 15px 5px 0px rgb(23, 70, 77);
+      transform: translate(15px, 15px);
+    }
+
+    75% {
+      text-shadow: 5px 15px 0px rgb(23, 70, 77);
+      transform: translate(15px, 10px);
+    }
+
+    100% {
+      text-shadow: 5px 10px 0px rgb(23, 70, 77);
+      transform: translate(10px, 5px);
+    }
+  }
+}
